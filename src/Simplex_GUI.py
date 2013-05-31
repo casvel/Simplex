@@ -15,6 +15,8 @@ import gtk
 import gtk.glade
 
 
+
+
 class MainWin:
     def __init__(self):
         # Le decimos a nuestro programa que archivo de glade usar (puede tener
