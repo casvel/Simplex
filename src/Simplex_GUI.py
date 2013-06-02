@@ -37,7 +37,8 @@ class MainWin:
 
     def on_Solve_clicked(self, widget):
         texto = self.Entrada.get_buffer().get_text(self.Entrada.get_buffer().get_start_iter(), self.Entrada.get_buffer().get_end_iter())
-        self.Salida.get_buffer().set_text("%d" % self.Entrada.get_buffer().get_line_count())
+        arg_Entrada = Parseado(texto)
+        # self.Salida.get_buffer().set_text("%d" % self.Entrada.get_buffer().get_line_count())
 
     def on_Clear_clicked(self, widget):
         self.Entrada.get_buffer().delete(self.Entrada.get_buffer().get_start_iter(), self.Entrada.get_buffer().get_end_iter())
